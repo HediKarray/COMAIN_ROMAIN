@@ -1,0 +1,1696 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN"
+     xml:base="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN"
+     xmlns:COMAIN="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label>hasParticipant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Fixes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Fixes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_task"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#nonconformity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000024 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000024">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:label xml:lang="en">hasRole</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000025 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000025">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000025"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000025"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">hasQuality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000026 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000026">
+        <rdfs:label xml:lang="en">bearerOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#dependsOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#dependsOn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#endsWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#endsWith">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#happensTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#happensTo">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#hasTrouble"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#hasA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#hasA"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#hasOutput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#hasOutput"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#hasPart">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#isPartOf"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#hasState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#hasState">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Asset"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#MatOnt_000000002"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#hasSubsequence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#hasSubsequence"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#hasTrouble -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#hasTrouble"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#isA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#isA"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#isAbout -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#isAbout">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#isPartOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#measuredAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#measuredAs"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#reports -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#reports">
+        <COMAIN:definition>this property indicates that a maintenance report concerns a maintenance task and/or a maintenance event</COMAIN:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#requires -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#requires">
+        <rdfs:label>processRequires</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#resolvedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#resolvedBy">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#violates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#violates"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#TotalActionCosts -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#TotalActionCosts"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#UsedHours -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#UsedHours"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+        <rdfs:label>entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label>continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label>occurent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000025"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000026"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>independent continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:label>temporal region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <rdfs:label>disposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:label>realizible entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:label>quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:label>specifically dependent continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <rdfs:label>role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label>object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:label>generically dependent continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label>function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <rdfs:label>one-dimensional temporal region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:label>material entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000148 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000148">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <rdfs:label>zero-dimensional temporal region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:label>data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:label>information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:comment>2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  &quot;is the specification of a process that can be concretized and realized by an actor&quot; with alternative term  &quot;instruction&quot;.It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</rdfs:comment>
+        <rdfs:isDefinedBy>An information content entity whose concretizations indicate to their bearer how to realize them in a process.</rdfs:isDefinedBy>
+        <rdfs:label>directive information entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000310 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000310">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:isDefinedBy>A collection of information content entities intended to be understood together as a whole</rdfs:isDefinedBy>
+        <rdfs:label>document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#Asset_modification_task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#Asset_modification_task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_engineer"/>
+        <rdfs:label>Asset modification task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#FinancialIndicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#FinancialIndicator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#indicator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#FunctionalRequirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#FunctionalRequirement">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <rdfs:isDefinedBy>The function(s) which constitute the main reason(s) why a physical asset or system is acquired by its owner or user.
+SAE JA 1011</rdfs:isDefinedBy>
+        <rdfs:label>Primary function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#IMAMO_0000000015 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#IMAMO_0000000015">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#FinancialIndicator"/>
+        <rdfs:label>cost of overtime maintenance indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#ImporovementRequest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#ImporovementRequest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggering_event"/>
+        <rdfs:label>event triggered by maintenance strategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#MatOnt_000000002 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#MatOnt_000000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label>state</rdfs:label>
+        <rdfs:label>status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#Prognostic-RUL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#Prognostic-RUL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#ImporovementRequest"/>
+        <rdfs:label>event triggred by Prognostic RUL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#indicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#indicator">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:isDefinedBy>An indicator is a calculated value intended to measure a process or the output of a process</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_engineer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_engineer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggering_event"/>
+        <rdfs:label>event triggered by engineer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_maintainer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_maintainer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggering_event"/>
+        <rdfs:label>event triggered by maintainer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_operator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_operator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggering_event"/>
+        <rdfs:label>event triggered by operator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggering_event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggering_event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event"/>
+        <rdfs:label>triggering event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Alarm_detected_by_Maintenance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Alarm_detected_by_Maintenance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_maintainer"/>
+        <rdfs:label>event_triggered_by Alarm detected by maintenance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Analysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Analysis">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label>Analysis process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Asset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Asset">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Asset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#LMU"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>ISO 55000:2014; 3.2.1 
+Asset: an item, thing or entity that has potential or actual value to an organization (3.1.14)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Availability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Availability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000014"/>
+        <rdfs:isDefinedBy>Availability is a measure of the time that an asset is available to perform its intended function over a defined period. Availability measures the impact that scheduled and unscheduled maintenance has on the plant performance.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#CapabilityDegradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#CapabilityDegradation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#degradation"/>
+        <rdfs:label>Capability Degradation non conformity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Degradation_process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Degradation_process">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#DegradedFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#DegradedFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#dysfunction"/>
+        <rdfs:label>degraded function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Degraded_and_in_maintenance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Degraded_and_in_maintenance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#MatOnt_000000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Degraded_and_operating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Degraded_and_operating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#MatOnt_000000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Effective_Use_of_Availability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Effective_Use_of_Availability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000014"/>
+        <rdfs:isDefinedBy>Effective Use of Availability is a measure of how much of the Available time is effectively utilised. Ratio of Operating Time to Available Time reported as a percentage (%).  It can also be derived by multiplying Operating Efficiency and Use of Availability.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Effective_Utilisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Effective_Utilisation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000014"/>
+        <rdfs:isDefinedBy>Effective Utilisation is a measure of the time an asset is operating productively albeit not necessarily at full rate. This is a key operational measure that highlights the impacts of all time-based losses.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Failed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Failed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#MatOnt_000000002"/>
+        <rdfs:isDefinedBy>not operating</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Failed_and_in_maintenance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Failed_and_in_maintenance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#MatOnt_000000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Functional_and_in_standby -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Functional_and_in_standby">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#MatOnt_000000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Functional_and_offline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Functional_and_offline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#MatOnt_000000002"/>
+        <rdfs:isDefinedBy>Functional and offline for routine and organised maintenance</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Functional_and_operating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Functional_and_operating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#MatOnt_000000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#IntermittentFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#IntermittentFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#dysfunction"/>
+        <rdfs:label>intermittent function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#IrregularFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#IrregularFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#dysfunction"/>
+        <rdfs:label>irregular function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Item">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:isDefinedBy>Any part, component, device, subsystem, functional unit, equipment or system that can be individually considered.
+AS IEC 603003.14 2005</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#LMU -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#LMU">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Asset"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#isPartOf"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Asset"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000025"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintainability"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Item"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#hasPart"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Item"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000025"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintainability"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:isDefinedBy>Maintainable item constitutes a part or an assembly of parts that is normally the lowest level in the equipment hierarchy during maintenance.
+ISO 14224:2006
+Also known as LMU least maintainable unit</rdfs:isDefinedBy>
+        <rdfs:label>Maintainable item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#LossFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#LossFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#dysfunction"/>
+        <rdfs:label>loss of function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MTBF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MTBF">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000014"/>
+        <rdfs:isDefinedBy>Mean Time Between Failure (MTBF) represents the average time in utilized hours between breakdowns. Ratio of Utilised Time to the Number of Breakdowns as based on the count of Unscheduled Loss Failures (ULF) events.</rdfs:isDefinedBy>
+        <rdfs:label>MTBF</rdfs:label>
+        <rdfs:label>Mean Time Between Failure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MTBS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MTBS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000014"/>
+        <rdfs:isDefinedBy>Mean Time Between Stoppages (MTBS) is used to quantify the reliability in operation of equipment. MTBS represents the average time in utilized hours between stoppages.</rdfs:isDefinedBy>
+        <rdfs:label>MTBS</rdfs:label>
+        <rdfs:label>Mean Time Between Stoppages</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MTTR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MTTR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000014"/>
+        <rdfs:isDefinedBy>Mean Time To Repair (MTTR) is used to quantify the time taken to maintain an asset.</rdfs:isDefinedBy>
+        <rdfs:label>MTTR</rdfs:label>
+        <rdfs:label>Mean Time To Repair</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Maintenance_Cost_per_Utilised_Hour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Maintenance_Cost_per_Utilised_Hour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#FinancialIndicator"/>
+        <rdfs:isDefinedBy>Maintenance Cost per Utilised Hour is a measure of the maintenance cost required to deliver one utilized hour of asset operation.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Maintenance_history -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Maintenance_history">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000011"/>
+        <COMAIN:definition>Maintenance history is a set of maintenance records</COMAIN:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Maintenance_life_plan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Maintenance_life_plan">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:isDefinedBy>A maintenance life plan is the collated information, strategy and procedures for the optimum maintenance of an asset, or group of assets, over its life (reference International Infrastructure Management Manual v3.0)</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000011 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:label xml:lang="en">data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000012 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000012">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000011"/>
+        <COMAIN:definition>A data set that is an aggregate of data recording some measurement at a number of time points. The time series data set is an ordered list of pairs of time measurement data and the corresponding measurement data acquired at that time.</COMAIN:definition>
+        <rdfs:label xml:lang="en">time sampled measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000014 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000014">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#indicator"/>
+        <rdfs:label>Asset Performance indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000015 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <rdfs:isDefinedBy>a document assembled by an author for the purpose of providing information for the audience. A report is the output of a documenting process and has the objective to be consumed by a specific audience. Topic of the report is on something that has completed. A report is not a single figure. Examples of reports are journal article, patent application, grant progress report, case report (not patient record)</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">report</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000016 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000016">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000015"/>
+        <COMAIN:definition>Specific type of document edited, containing information about the intervention such as observations and remarks on the part of actors. This type of document is exploited in the experience feedback process.</COMAIN:definition>
+        <rdfs:label xml:lang="en">intervention report</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000017 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <rdfs:isDefinedBy>A document usually produced by the Original Equipment Manufacturer that describes the maintenance plan for the asset</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Maintenance Manual</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000019 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <COMAIN:definition>An Independent Continuant that is capable of performing Intentional Acts.</COMAIN:definition>
+        <rdfs:label>Agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000020 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:label xml:lang="en">operator role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000021 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:label xml:lang="en">expert role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000022 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:label xml:lang="en">manager role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#On_condition_maintenance_strategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#On_condition_maintenance_strategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;maintenance_strategy&apos;"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Operating_Efficiency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Operating_Efficiency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000014"/>
+        <rdfs:isDefinedBy>The percentage of time the plant was available with an operator and was performing its primary function. Ratio of Operating Time to Utilised Time reported as a percentage (%).</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Overall_Equipment_Effectiveness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Overall_Equipment_Effectiveness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000014"/>
+        <rdfs:isDefinedBy>OEE is used to quantify the effective use of scheduled operating time for an asset. OEE is defined as the ratio of Valuable Operating Time to Scheduled Operating Time – expressed as a percentage.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000019"/>
+        <rdfs:isDefinedBy>An agent that is a human being</rdfs:isDefinedBy>
+        <rdfs:label>Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Process_boundary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Process_boundary">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:label>process boundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Reliability_analysis_process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Reliability_analysis_process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Analysis"/>
+        <rdfs:isDefinedBy>Describes the data-driven processes used to assess the reliability of an asset</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Root_cause_analysis_process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Root_cause_analysis_process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Analysis"/>
+        <rdfs:isDefinedBy>Is a process of inquiry used for identifying the root causes of failure</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Root_cause_analysis_report -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Root_cause_analysis_report">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000015"/>
+        <COMAIN:definition>Report capturing the process, findings and recommendations from a root cause analysis process</COMAIN:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Secondary_function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Secondary_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <rdfs:isDefinedBy>Functions which a physical asset or system has to fulfil apart from its primary function(s), such as those needed to fulfil regulatory requirements and those which concern issues such as protection, control, containment, comfort, appearance, energy efficiency and structural integrity.
+SAE JA 1012</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Software_agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Software_agent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000019"/>
+        <rdfs:isDefinedBy>A computer program that acts for a user or other program</rdfs:isDefinedBy>
+        <rdfs:label>Software agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Use_of_Availability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Use_of_Availability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000014"/>
+        <rdfs:isDefinedBy>Use of Availability is a measure of how much of the Available time is utilised. It measures the ability of operating teams to use the asset when it is available.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Utilisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Utilisation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000014"/>
+        <rdfs:isDefinedBy>Utilisation is a measure of the time that the asset is utilized, albeit productively or non-productively (i.e. includes operating delays).</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Work_order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Work_order">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:isDefinedBy>A work order is a record. A work order is first an authorization of maintenance, repair or operations work to be completed. Work orders can be manually generated through a work request submitted by a staff member, client, tenant, or automatically generated through a work order management software or Preventive Maintenance (PM) schedule. It is also used to record the maintenance action taken and captures the costs and resources required and actually used in the execution of the maintenance task</rdfs:isDefinedBy>
+        <rdfs:label>Maintenance_work_order (MWO)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#degradQuality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#degradQuality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#degradation"/>
+        <rdfs:label>quality degradation non conformity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#degradation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#nonconformity"/>
+        <rdfs:label>degradation non conformity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#dysfunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#dysfunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#nonconformity"/>
+        <rdfs:comment>Functional failure</rdfs:comment>
+        <rdfs:label>dysfunction non conformity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engineer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engineer">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:label>engineer role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
+        <rdfs:label>Instantaneous event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_tirggered_by_Fixed_Interval_Preventative_Maintenance_Task_execution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_tirggered_by_Fixed_Interval_Preventative_Maintenance_Task_execution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#ImporovementRequest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Alarm_detected_by_Operator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Alarm_detected_by_Operator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_operator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Condition_monitoring_Task_execution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Condition_monitoring_Task_execution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#ImporovementRequest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Failure_finding_task_execution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Failure_finding_task_execution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#ImporovementRequest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Follow-up_from_prior_WO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Follow-up_from_prior_WO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_maintainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Inspection_Route_by_Operator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Inspection_Route_by_Operator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_operator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Maintainer_Inspection_Route -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Maintainer_Inspection_Route">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_maintainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Maintenance_Casual_Observation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Maintenance_Casual_Observation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_maintainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Operator_Call -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Operator_Call">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_operator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Operator_Casual_Observation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Operator_Casual_Observation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_operator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Operator_Inspection_Route -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Operator_Inspection_Route">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_operator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failureEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failureEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event"/>
+        <COMAIN:definition>A zero dimensional temporal region (point of time) in which a physical asset or system is unable to perform a specific function to a desired level of performance.
+
+SAE JA 1011/1012</COMAIN:definition>
+        <rdfs:label>functional failure event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failure_finding_maintenance_strategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failure_finding_maintenance_strategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;maintenance_strategy&apos;"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintainability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintainability">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintainer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintainer">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:label>maintainer role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_action">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <COMAIN:definition>maintenance action is a process that includes one or more tasks capable to retain a maintainable item in or restoring it to a specific condition.</COMAIN:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_data">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <COMAIN:definition>Data characterising the maintenance action planned or done. This is captured on a work order.</COMAIN:definition>
+        <rdfs:label>maintenance record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_notification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_notification">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#isAbout"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggering_event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_action"/>
+        <rdfs:isDefinedBy>A task is an elementary maintenance action.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#modification_maintenance_strategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#modification_maintenance_strategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;maintenance_strategy&apos;"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#nonconformity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#nonconformity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#violates"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#requirement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>A deviation from the requirement</rdfs:isDefinedBy>
+        <rdfs:label>non conformity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#planner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#planner">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:label>planner role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#requirement">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:isDefinedBy>Need or expectation that is stated, generally implied or obligatory
+ISO 55000</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#run-to-failure_maintenance_strategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#run-to-failure_maintenance_strategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;maintenance_strategy&apos;"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#scheduled_repair_maintenance_strategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#scheduled_repair_maintenance_strategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;maintenance_strategy&apos;"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#scheduled_restoration_maintenance_strategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#scheduled_restoration_maintenance_strategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;maintenance_strategy&apos;"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#work_management_process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#work_management_process">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;maintenance_schedule&apos; -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;maintenance_schedule&apos;">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:isDefinedBy>A maintenance schedule is a list of maintenance tasks to be executed in a defined period</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;maintenance_strategy&apos; -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;maintenance_strategy&apos;">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:isDefinedBy>Identifies the task type to deal with a specific functional failure</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;maintenance_strategy_development&apos; -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;maintenance_strategy_development&apos;">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#work_management_process"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#hasOutput"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;maintenance_strategy&apos;"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Maintenance strategy development and optimisation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;procedure&apos; -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;procedure&apos;">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:isDefinedBy>Specified way of carrying out an activity, process or task</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;task&apos; -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;task&apos;">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <COMAIN:definition>Describes what actions a maintainer needs to perform</COMAIN:definition>
+        <rdfs:label>Maintenance task description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;work_management_scheduling&apos; -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;work_management_scheduling&apos;">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#work_management_process"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#hasOutput"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;maintenance_schedule&apos;"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>maintenance schedule process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;work_order_execution&apos; -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;work_order_execution&apos;">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#work_management_process"/>
+        <rdfs:label>Maintenance task execution process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;work_order_planning&apos; -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;work_order_planning&apos;">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#work_management_process"/>
+        <rdfs:label>work order planning process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Follow-up_frm_Cond.Based_WO/Follow-up_frm_Cond.Based_WO/event_triggered_by_PdM_Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Follow-up_frm_Cond.Based_WO/Follow-up_frm_Cond.Based_WO/event_triggered_by_PdM_Activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_maintainer"/>
+        <rdfs:label>event_triggered_by Follow-up_from_Cond.Based_WO/PdM_Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Follow-up_frm_Prev.Mtc._WO/PM_Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Follow-up_frm_Prev.Mtc._WO/PM_Activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_maintainer"/>
+        <rdfs:label>event_triggered_by Follow-up_from_Prev.Mtc_WO/PdM_Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#conservation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#conservation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintainability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#dont_trigger_alarm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#dont_trigger_alarm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#requirement"/>
+        <COMAIN:definition>This requirement indicates that the item/asset should not trigger any alarm in a fully functional state</COMAIN:definition>
+        <rdfs:label>dont trigger alarm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Asset"/>
+        <COMAIN:MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#conservation"/>
+        <COMAIN:MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#restoration"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failure_event_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failure_event_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failureEvent"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engine"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#shutting_down"/>
+        <COMAIN:UsedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">210</COMAIN:UsedHours>
+        <rdfs:label>failure event 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failure_event_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failure_event_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failureEvent"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engine"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_error"/>
+        <COMAIN:UsedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1085</COMAIN:UsedHours>
+        <rdfs:label>failure event 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_event_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_event_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Follow-up_frm_Prev.Mtc._WO/PM_Activity"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_level_switch"/>
+        <COMAIN:UsedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3080</COMAIN:UsedHours>
+        <rdfs:label>maintenance event 4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#measurement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#measurement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#not_stop_unpredictably -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#not_stop_unpredictably">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#requirement"/>
+        <COMAIN:definition>This requirement indicates that the asset / item should not stop unpredictably</COMAIN:definition>
+        <rdfs:label>dont stop unpredictably</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_error -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_error">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#degradQuality"/>
+        <COMAIN:violates rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#dont_trigger_alarm"/>
+        <COMAIN:definition>This degradation indictaes that the level of oil is too low for requirements</COMAIN:definition>
+        <rdfs:label>low oil error</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_level_switch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_level_switch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Item"/>
+        <COMAIN:MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replacement"/>
+        <rdfs:label>oil level switch</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#repair_low_oil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#repair_low_oil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_task"/>
+        <COMAIN:Fixes rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_error"/>
+        <COMAIN:MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#restoration"/>
+        <rdfs:label>repair engine low oil level error</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#repair_shutting_down -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#repair_shutting_down">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_task"/>
+        <COMAIN:Fixes rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#shutting_down"/>
+        <COMAIN:MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#restoration"/>
+        <COMAIN:definition>Task of repairing the unwanted shutting down of an engine</COMAIN:definition>
+        <rdfs:label>Repair engine shutting down</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replace_engine_oil_level_switch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replace_engine_oil_level_switch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_task"/>
+        <COMAIN:MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replacement"/>
+        <rdfs:label>replace engine oil level switch</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replacement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replacement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintainability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#report1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#report1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000016"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engine"/>
+        <COMAIN:reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failure_event_1"/>
+        <COMAIN:reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#repair_shutting_down"/>
+        <COMAIN:TotalActionCosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1013.53</COMAIN:TotalActionCosts>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#report2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#report2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000016"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engine"/>
+        <COMAIN:reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failure_event_2"/>
+        <COMAIN:reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#repair_low_oil"/>
+        <COMAIN:TotalActionCosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">506.77</COMAIN:TotalActionCosts>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#report3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#report3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000016"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_level_switch"/>
+        <COMAIN:reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_event_4"/>
+        <COMAIN:reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replace_engine_oil_level_switch"/>
+        <COMAIN:TotalActionCosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">767.60</COMAIN:TotalActionCosts>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#restoration -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#restoration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintainability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#shutting_down -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#shutting_down">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#IntermittentFunction"/>
+        <COMAIN:violates rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#not_stop_unpredictably"/>
+        <COMAIN:definition>This dysfunction occurs when an asset/item shuts down erratically.</COMAIN:definition>
+        <rdfs:label>shutting down</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#try -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#try"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
