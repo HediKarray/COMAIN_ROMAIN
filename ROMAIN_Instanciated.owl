@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN"
+<rdf:RDF xmlns="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#"
      xml:base="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN"
      xmlns:COMAIN="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -194,7 +194,7 @@
     <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#reports -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#reports">
-        <COMAIN:definition>this property indicates that a maintenance report concerns a maintenance task and/or a maintenance event</COMAIN:definition>
+        <definition>this property indicates that a maintenance report concerns a maintenance task and/or a maintenance event</definition>
     </owl:ObjectProperty>
     
 
@@ -636,6 +636,7 @@ Asset: an item, thing or entity that has potential or actual value to an organiz
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Degradation_process">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:isDefinedBy>A process in which the performance of the asset deteriorates until it is no longer able to perform its required function</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -858,7 +859,7 @@ Also known as LMU least maintainable unit</rdfs:isDefinedBy>
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Maintenance_history">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000011"/>
-        <COMAIN:definition>Maintenance history is a set of maintenance records</COMAIN:definition>
+        <definition>Maintenance history is a set of maintenance records</definition>
     </owl:Class>
     
 
@@ -885,7 +886,7 @@ Also known as LMU least maintainable unit</rdfs:isDefinedBy>
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000012">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000011"/>
-        <COMAIN:definition>A data set that is an aggregate of data recording some measurement at a number of time points. The time series data set is an ordered list of pairs of time measurement data and the corresponding measurement data acquired at that time.</COMAIN:definition>
+        <definition>A data set that is an aggregate of data recording some measurement at a number of time points. The time series data set is an ordered list of pairs of time measurement data and the corresponding measurement data acquired at that time.</definition>
         <rdfs:label xml:lang="en">time sampled measurement</rdfs:label>
     </owl:Class>
     
@@ -914,7 +915,7 @@ Also known as LMU least maintainable unit</rdfs:isDefinedBy>
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000016">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000015"/>
-        <COMAIN:definition>Specific type of document edited, containing information about the intervention such as observations and remarks on the part of actors. This type of document is exploited in the experience feedback process.</COMAIN:definition>
+        <definition>Specific type of document edited, containing information about the intervention such as observations and remarks on the part of actors. This type of document is exploited in the experience feedback process.</definition>
         <rdfs:label xml:lang="en">intervention report</rdfs:label>
     </owl:Class>
     
@@ -934,7 +935,7 @@ Also known as LMU least maintainable unit</rdfs:isDefinedBy>
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <COMAIN:definition>An Independent Continuant that is capable of performing Intentional Acts.</COMAIN:definition>
+        <definition>An Independent Continuant that is capable of performing Intentional Acts.</definition>
         <rdfs:label>Agent</rdfs:label>
     </owl:Class>
     
@@ -1034,7 +1035,7 @@ Also known as LMU least maintainable unit</rdfs:isDefinedBy>
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Root_cause_analysis_report">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000015"/>
-        <COMAIN:definition>Report capturing the process, findings and recommendations from a root cause analysis process</COMAIN:definition>
+        <definition>Report capturing the process, findings and recommendations from a root cause analysis process</definition>
     </owl:Class>
     
 
@@ -1225,9 +1226,9 @@ SAE JA 1012</rdfs:isDefinedBy>
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failureEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event"/>
-        <COMAIN:definition>A zero dimensional temporal region (point of time) in which a physical asset or system is unable to perform a specific function to a desired level of performance.
+        <definition>A zero dimensional temporal region (point of time) in which a physical asset or system is unable to perform a specific function to a desired level of performance.
 
-SAE JA 1011/1012</COMAIN:definition>
+SAE JA 1011/1012</definition>
         <rdfs:label>functional failure event</rdfs:label>
     </owl:Class>
     
@@ -1244,7 +1245,8 @@ SAE JA 1011/1012</COMAIN:definition>
     <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintainability -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintainability">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:isDefinedBy>the measure of the ability of an item to be retained in or restored to specified condition when maintenance is performed by personnel having specified skill levels, using prescribed procedures and resources, at each prescribed level of maintenance</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -1262,7 +1264,7 @@ SAE JA 1011/1012</COMAIN:definition>
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_action">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <COMAIN:definition>maintenance action is a process that includes one or more tasks capable to retain a maintainable item in or restoring it to a specific condition.</COMAIN:definition>
+        <definition>maintenance action is a process that includes one or more tasks capable to retain a maintainable item in or restoring it to a specific condition.</definition>
     </owl:Class>
     
 
@@ -1271,7 +1273,7 @@ SAE JA 1011/1012</COMAIN:definition>
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_data">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <COMAIN:definition>Data characterising the maintenance action planned or done. This is captured on a work order.</COMAIN:definition>
+        <definition>Data characterising the maintenance action planned or done. This is captured on a work order.</definition>
         <rdfs:label>maintenance record</rdfs:label>
     </owl:Class>
     
@@ -1280,13 +1282,15 @@ SAE JA 1011/1012</COMAIN:definition>
     <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_notification -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_notification">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#isAbout"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggering_event"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:isDefinedBy>A record that a non-conformity has occurre</rdfs:isDefinedBy>
+        <rdfs:label>maintenance notification</rdfs:label>
     </owl:Class>
     
 
@@ -1421,7 +1425,7 @@ ISO 55000</rdfs:isDefinedBy>
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;task&apos;">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <COMAIN:definition>Describes what actions a maintainer needs to perform</COMAIN:definition>
+        <definition>Describes what actions a maintainer needs to perform</definition>
         <rdfs:label>Maintenance task description</rdfs:label>
     </owl:Class>
     
@@ -1491,9 +1495,7 @@ ISO 55000</rdfs:isDefinedBy>
 
     <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#conservation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#conservation">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintainability"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#conservation"/>
     
 
 
@@ -1501,7 +1503,7 @@ ISO 55000</rdfs:isDefinedBy>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#dont_trigger_alarm">
         <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#requirement"/>
-        <COMAIN:definition>This requirement indicates that the item/asset should not trigger any alarm in a fully functional state</COMAIN:definition>
+        <definition>This requirement indicates that the item/asset should not trigger any alarm in a fully functional state</definition>
         <rdfs:label>dont trigger alarm</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1511,8 +1513,8 @@ ISO 55000</rdfs:isDefinedBy>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engine">
         <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Asset"/>
-        <COMAIN:MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#conservation"/>
-        <COMAIN:MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#restoration"/>
+        <MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#conservation"/>
+        <MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#restoration"/>
     </owl:NamedIndividual>
     
 
@@ -1521,9 +1523,9 @@ ISO 55000</rdfs:isDefinedBy>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failure_event_1">
         <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failureEvent"/>
-        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engine"/>
-        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#shutting_down"/>
-        <COMAIN:UsedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">210</COMAIN:UsedHours>
+        <isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engine"/>
+        <isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#shutting_down"/>
+        <UsedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">210</UsedHours>
         <rdfs:label>failure event 1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1533,9 +1535,9 @@ ISO 55000</rdfs:isDefinedBy>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failure_event_2">
         <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failureEvent"/>
-        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engine"/>
-        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_error"/>
-        <COMAIN:UsedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1085</COMAIN:UsedHours>
+        <isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engine"/>
+        <isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_error"/>
+        <UsedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1085</UsedHours>
         <rdfs:label>failure event 2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1545,8 +1547,8 @@ ISO 55000</rdfs:isDefinedBy>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_event_4">
         <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Follow-up_frm_Prev.Mtc._WO/PM_Activity"/>
-        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_level_switch"/>
-        <COMAIN:UsedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3080</COMAIN:UsedHours>
+        <isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_level_switch"/>
+        <UsedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3080</UsedHours>
         <rdfs:label>maintenance event 4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1562,7 +1564,7 @@ ISO 55000</rdfs:isDefinedBy>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#not_stop_unpredictably">
         <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#requirement"/>
-        <COMAIN:definition>This requirement indicates that the asset / item should not stop unpredictably</COMAIN:definition>
+        <definition>This requirement indicates that the asset / item should not stop unpredictably</definition>
         <rdfs:label>dont stop unpredictably</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1572,8 +1574,8 @@ ISO 55000</rdfs:isDefinedBy>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_error">
         <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#degradQuality"/>
-        <COMAIN:violates rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#dont_trigger_alarm"/>
-        <COMAIN:definition>This degradation indictaes that the level of oil is too low for requirements</COMAIN:definition>
+        <violates rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#dont_trigger_alarm"/>
+        <definition>This degradation indictaes that the level of oil is too low for requirements</definition>
         <rdfs:label>low oil error</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1583,7 +1585,7 @@ ISO 55000</rdfs:isDefinedBy>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_level_switch">
         <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Item"/>
-        <COMAIN:MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replacement"/>
+        <MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replacement"/>
         <rdfs:label>oil level switch</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1593,8 +1595,8 @@ ISO 55000</rdfs:isDefinedBy>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#repair_low_oil">
         <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_task"/>
-        <COMAIN:Fixes rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_error"/>
-        <COMAIN:MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#restoration"/>
+        <Fixes rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_error"/>
+        <MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#restoration"/>
         <rdfs:label>repair engine low oil level error</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1604,9 +1606,9 @@ ISO 55000</rdfs:isDefinedBy>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#repair_shutting_down">
         <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_task"/>
-        <COMAIN:Fixes rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#shutting_down"/>
-        <COMAIN:MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#restoration"/>
-        <COMAIN:definition>Task of repairing the unwanted shutting down of an engine</COMAIN:definition>
+        <Fixes rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#shutting_down"/>
+        <MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#restoration"/>
+        <definition>Task of repairing the unwanted shutting down of an engine</definition>
         <rdfs:label>Repair engine shutting down</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1616,7 +1618,7 @@ ISO 55000</rdfs:isDefinedBy>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replace_engine_oil_level_switch">
         <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_task"/>
-        <COMAIN:MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replacement"/>
+        <MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replacement"/>
         <rdfs:label>replace engine oil level switch</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1624,9 +1626,7 @@ ISO 55000</rdfs:isDefinedBy>
 
     <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replacement -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replacement">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintainability"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replacement"/>
     
 
 
@@ -1634,10 +1634,10 @@ ISO 55000</rdfs:isDefinedBy>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#report1">
         <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000016"/>
-        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engine"/>
-        <COMAIN:reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failure_event_1"/>
-        <COMAIN:reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#repair_shutting_down"/>
-        <COMAIN:TotalActionCosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1013.53</COMAIN:TotalActionCosts>
+        <isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engine"/>
+        <reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failure_event_1"/>
+        <reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#repair_shutting_down"/>
+        <TotalActionCosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1013.53</TotalActionCosts>
     </owl:NamedIndividual>
     
 
@@ -1646,10 +1646,10 @@ ISO 55000</rdfs:isDefinedBy>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#report2">
         <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000016"/>
-        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engine"/>
-        <COMAIN:reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failure_event_2"/>
-        <COMAIN:reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#repair_low_oil"/>
-        <COMAIN:TotalActionCosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">506.77</COMAIN:TotalActionCosts>
+        <isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engine"/>
+        <reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failure_event_2"/>
+        <reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#repair_low_oil"/>
+        <TotalActionCosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">506.77</TotalActionCosts>
     </owl:NamedIndividual>
     
 
@@ -1658,19 +1658,17 @@ ISO 55000</rdfs:isDefinedBy>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#report3">
         <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000016"/>
-        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_level_switch"/>
-        <COMAIN:reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_event_4"/>
-        <COMAIN:reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replace_engine_oil_level_switch"/>
-        <COMAIN:TotalActionCosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">767.60</COMAIN:TotalActionCosts>
+        <isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_level_switch"/>
+        <reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_event_4"/>
+        <reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replace_engine_oil_level_switch"/>
+        <TotalActionCosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">767.60</TotalActionCosts>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#restoration -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#restoration">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintainability"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#restoration"/>
     
 
 
@@ -1678,8 +1676,8 @@ ISO 55000</rdfs:isDefinedBy>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#shutting_down">
         <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#IntermittentFunction"/>
-        <COMAIN:violates rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#not_stop_unpredictably"/>
-        <COMAIN:definition>This dysfunction occurs when an asset/item shuts down erratically.</COMAIN:definition>
+        <violates rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#not_stop_unpredictably"/>
+        <definition>This dysfunction occurs when an asset/item shuts down erratically.</definition>
         <rdfs:label>shutting down</rdfs:label>
     </owl:NamedIndividual>
     
