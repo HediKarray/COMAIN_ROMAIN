@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#"
+<rdf:RDF xmlns="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN"
      xml:base="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN"
      xmlns:COMAIN="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -51,15 +51,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Fixes -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Fixes">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_task"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#nonconformity"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000024 -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000024">
@@ -73,18 +64,6 @@
     <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000025 -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000025">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-            </owl:Restriction>
-        </rdfs:range>
         <rdfs:label xml:lang="en">hasQuality</rdfs:label>
     </owl:ObjectProperty>
     
@@ -174,7 +153,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#isAbout">
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event"/>
     </owl:ObjectProperty>
     
 
@@ -188,14 +166,6 @@
     <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#measuredAs -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#measuredAs"/>
-    
-
-
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#reports -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#reports">
-        <definition>this property indicates that a maintenance report concerns a maintenance task and/or a maintenance event</definition>
-    </owl:ObjectProperty>
     
 
 
@@ -232,15 +202,27 @@
     
 
 
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#TotalActionCosts -->
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#ActualCost -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#TotalActionCosts"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#ActualCost"/>
     
 
 
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#UsedHours -->
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#CumulativeUtilizedHours -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#UsedHours"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#CumulativeUtilizedHours"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#PlannedCost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#PlannedCost"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#UtilizedHours -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#UtilizedHours"/>
     
 
 
@@ -636,7 +618,6 @@ Asset: an item, thing or entity that has potential or actual value to an organiz
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Degradation_process">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:isDefinedBy>A process in which the performance of the asset deteriorates until it is no longer able to perform its required function</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -859,7 +840,7 @@ Also known as LMU least maintainable unit</rdfs:isDefinedBy>
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Maintenance_history">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000011"/>
-        <definition>Maintenance history is a set of maintenance records</definition>
+        <COMAIN:definition>Maintenance history is a set of maintenance records</COMAIN:definition>
     </owl:Class>
     
 
@@ -886,7 +867,7 @@ Also known as LMU least maintainable unit</rdfs:isDefinedBy>
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000012">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000011"/>
-        <definition>A data set that is an aggregate of data recording some measurement at a number of time points. The time series data set is an ordered list of pairs of time measurement data and the corresponding measurement data acquired at that time.</definition>
+        <COMAIN:definition>A data set that is an aggregate of data recording some measurement at a number of time points. The time series data set is an ordered list of pairs of time measurement data and the corresponding measurement data acquired at that time.</COMAIN:definition>
         <rdfs:label xml:lang="en">time sampled measurement</rdfs:label>
     </owl:Class>
     
@@ -915,7 +896,7 @@ Also known as LMU least maintainable unit</rdfs:isDefinedBy>
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000016">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000015"/>
-        <definition>Specific type of document edited, containing information about the intervention such as observations and remarks on the part of actors. This type of document is exploited in the experience feedback process.</definition>
+        <COMAIN:definition>Specific type of document edited, containing information about the intervention such as observations and remarks on the part of actors. This type of document is exploited in the experience feedback process.</COMAIN:definition>
         <rdfs:label xml:lang="en">intervention report</rdfs:label>
     </owl:Class>
     
@@ -935,7 +916,7 @@ Also known as LMU least maintainable unit</rdfs:isDefinedBy>
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <definition>An Independent Continuant that is capable of performing Intentional Acts.</definition>
+        <COMAIN:definition>An Independent Continuant that is capable of performing Intentional Acts.</COMAIN:definition>
         <rdfs:label>Agent</rdfs:label>
     </owl:Class>
     
@@ -1035,7 +1016,7 @@ Also known as LMU least maintainable unit</rdfs:isDefinedBy>
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Root_cause_analysis_report">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000015"/>
-        <definition>Report capturing the process, findings and recommendations from a root cause analysis process</definition>
+        <COMAIN:definition>Report capturing the process, findings and recommendations from a root cause analysis process</COMAIN:definition>
     </owl:Class>
     
 
@@ -1226,9 +1207,9 @@ SAE JA 1012</rdfs:isDefinedBy>
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failureEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event"/>
-        <definition>A zero dimensional temporal region (point of time) in which a physical asset or system is unable to perform a specific function to a desired level of performance.
+        <COMAIN:definition>A zero dimensional temporal region (point of time) in which a physical asset or system is unable to perform a specific function to a desired level of performance.
 
-SAE JA 1011/1012</definition>
+SAE JA 1011/1012</COMAIN:definition>
         <rdfs:label>functional failure event</rdfs:label>
     </owl:Class>
     
@@ -1245,8 +1226,11 @@ SAE JA 1011/1012</definition>
     <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintainability -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintainability">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <rdfs:isDefinedBy>the measure of the ability of an item to be retained in or restored to specified condition when maintenance is performed by personnel having specified skill levels, using prescribed procedures and resources, at each prescribed level of maintenance</rdfs:isDefinedBy>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:isDefinedBy>the ability of an item under given conditions of use, to be retained in, or restored to, a state in which  it  can  perform  a  required  function,  when  maintenance  is  performed  under  given conditions and using stated procedures and resources 
+AS IEC 60300.3.10—2004 (R2016)
+Dependability management 
+Part 3.10:  Application guide—Maintainability</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -1260,20 +1244,11 @@ SAE JA 1011/1012</definition>
     
 
 
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_action -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_action">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <definition>maintenance action is a process that includes one or more tasks capable to retain a maintainable item in or restoring it to a specific condition.</definition>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_data -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_data">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <definition>Data characterising the maintenance action planned or done. This is captured on a work order.</definition>
+        <COMAIN:definition>Data characterising the maintenance action planned or done. This is captured on a work order.</COMAIN:definition>
         <rdfs:label>maintenance record</rdfs:label>
     </owl:Class>
     
@@ -1282,15 +1257,13 @@ SAE JA 1011/1012</definition>
     <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_notification -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_notification">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#isAbout"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggering_event"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:isDefinedBy>A record that a non-conformity has occurre</rdfs:isDefinedBy>
-        <rdfs:label>maintenance notification</rdfs:label>
     </owl:Class>
     
 
@@ -1298,8 +1271,8 @@ SAE JA 1011/1012</definition>
     <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_task -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_task">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_action"/>
-        <rdfs:isDefinedBy>A task is an elementary maintenance action.</rdfs:isDefinedBy>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:isDefinedBy>A task is an elementary maintenance action. One or more tasks are involved in retaining a maintainable item in or restoring it to a specific condition.</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -1425,7 +1398,7 @@ ISO 55000</rdfs:isDefinedBy>
 
     <owl:Class rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#&apos;task&apos;">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <definition>Describes what actions a maintainer needs to perform</definition>
+        <COMAIN:definition>Describes what actions a maintainer needs to perform</COMAIN:definition>
         <rdfs:label>Maintenance task description</rdfs:label>
     </owl:Class>
     
@@ -1493,199 +1466,418 @@ ISO 55000</rdfs:isDefinedBy>
     
 
 
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#conservation -->
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#conservation"/>
-    
-
-
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#dont_trigger_alarm -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#dont_trigger_alarm">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#requirement"/>
-        <definition>This requirement indicates that the item/asset should not trigger any alarm in a fully functional state</definition>
-        <rdfs:label>dont trigger alarm</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engine -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engine">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Asset"/>
-        <MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#conservation"/>
-        <MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#restoration"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failure_event_1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failure_event_1">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event1">
         <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failureEvent"/>
-        <isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engine"/>
-        <isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#shutting_down"/>
-        <UsedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">210</UsedHours>
-        <rdfs:label>failure event 1</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failure_event_2 -->
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event10 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failure_event_2">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Maintainer_Inspection_Route"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Maintainer_Inspection_Route"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Maintainer_Inspection_Route"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Maintainer_Inspection_Route"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_tirggered_by_Fixed_Interval_Preventative_Maintenance_Task_execution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Maintainer_Inspection_Route"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event16">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_tirggered_by_Fixed_Interval_Preventative_Maintenance_Task_execution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Maintainer_Inspection_Route"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event18 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event18">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Maintainer_Inspection_Route"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event19">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Maintainer_Inspection_Route"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event2">
         <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failureEvent"/>
-        <isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engine"/>
-        <isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_error"/>
-        <UsedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1085</UsedHours>
-        <rdfs:label>failure event 2</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_event_4 -->
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event20 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_event_4">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Follow-up_frm_Prev.Mtc._WO/PM_Activity"/>
-        <isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_level_switch"/>
-        <UsedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3080</UsedHours>
-        <rdfs:label>maintenance event 4</rdfs:label>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Maintainer_Inspection_Route"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#measurement -->
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event3 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#measurement"/>
-    
-
-
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#not_stop_unpredictably -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#not_stop_unpredictably">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#requirement"/>
-        <definition>This requirement indicates that the asset / item should not stop unpredictably</definition>
-        <rdfs:label>dont stop unpredictably</rdfs:label>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Maintainer_Inspection_Route"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_error -->
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event4 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_error">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#degradQuality"/>
-        <violates rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#dont_trigger_alarm"/>
-        <definition>This degradation indictaes that the level of oil is too low for requirements</definition>
-        <rdfs:label>low oil error</rdfs:label>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Operator_Casual_Observation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_level_switch -->
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event5 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_level_switch">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Item"/>
-        <MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replacement"/>
-        <rdfs:label>oil level switch</rdfs:label>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_tirggered_by_Fixed_Interval_Preventative_Maintenance_Task_execution"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#repair_low_oil -->
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event6 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#repair_low_oil">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_task"/>
-        <Fixes rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_error"/>
-        <MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#restoration"/>
-        <rdfs:label>repair engine low oil level error</rdfs:label>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Maintainer_Inspection_Route"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#repair_shutting_down -->
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event7 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#repair_shutting_down">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_task"/>
-        <Fixes rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#shutting_down"/>
-        <MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#restoration"/>
-        <definition>Task of repairing the unwanted shutting down of an engine</definition>
-        <rdfs:label>Repair engine shutting down</rdfs:label>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failureEvent"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replace_engine_oil_level_switch -->
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event8 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replace_engine_oil_level_switch">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_task"/>
-        <MatOnt_000000025 rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replacement"/>
-        <rdfs:label>replace engine oil level switch</rdfs:label>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failureEvent"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replacement -->
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event9 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replacement"/>
-    
-
-
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#report1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#report1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000016"/>
-        <isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engine"/>
-        <reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failure_event_1"/>
-        <reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#repair_shutting_down"/>
-        <TotalActionCosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1013.53</TotalActionCosts>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#event_triggered_by_Maintainer_Inspection_Route"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#report2 -->
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#report2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000016"/>
-        <isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#engine"/>
-        <reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#failure_event_2"/>
-        <reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#repair_low_oil"/>
-        <TotalActionCosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">506.77</TotalActionCosts>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Work_order"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event1"/>
+        <COMAIN:ActualCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1014</COMAIN:ActualCost>
+        <COMAIN:CumulativeUtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">210</COMAIN:CumulativeUtilizedHours>
+        <COMAIN:UtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">210</COMAIN:UtilizedHours>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#report3 -->
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO10 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#report3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#MatOnt_000000016"/>
-        <isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#oil_level_switch"/>
-        <reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#maintenance_event_4"/>
-        <reports rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#replace_engine_oil_level_switch"/>
-        <TotalActionCosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">767.60</TotalActionCosts>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Work_order"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event10"/>
+        <COMAIN:ActualCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1279</COMAIN:ActualCost>
+        <COMAIN:CumulativeUtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12653</COMAIN:CumulativeUtilizedHours>
+        <COMAIN:PlannedCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">584</COMAIN:PlannedCost>
+        <COMAIN:UtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</COMAIN:UtilizedHours>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#restoration -->
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO11 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#restoration"/>
-    
-
-
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#shutting_down -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#shutting_down">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#IntermittentFunction"/>
-        <violates rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#not_stop_unpredictably"/>
-        <definition>This dysfunction occurs when an asset/item shuts down erratically.</definition>
-        <rdfs:label>shutting down</rdfs:label>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Work_order"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event11"/>
+        <COMAIN:ActualCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">785</COMAIN:ActualCost>
+        <COMAIN:CumulativeUtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12828</COMAIN:CumulativeUtilizedHours>
+        <COMAIN:PlannedCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">785</COMAIN:PlannedCost>
+        <COMAIN:UtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">175</COMAIN:UtilizedHours>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#try -->
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO12 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#try"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Work_order"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event12"/>
+        <COMAIN:ActualCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">521</COMAIN:ActualCost>
+        <COMAIN:CumulativeUtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12915</COMAIN:CumulativeUtilizedHours>
+        <COMAIN:UtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">88</COMAIN:UtilizedHours>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Work_order"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event13"/>
+        <COMAIN:ActualCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</COMAIN:ActualCost>
+        <COMAIN:CumulativeUtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14053</COMAIN:CumulativeUtilizedHours>
+        <COMAIN:PlannedCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">388</COMAIN:PlannedCost>
+        <COMAIN:UtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1138</COMAIN:UtilizedHours>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Work_order"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event14"/>
+        <COMAIN:ActualCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">225849</COMAIN:ActualCost>
+        <COMAIN:CumulativeUtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14788</COMAIN:CumulativeUtilizedHours>
+        <COMAIN:PlannedCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37277</COMAIN:PlannedCost>
+        <COMAIN:UtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">735</COMAIN:UtilizedHours>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Work_order"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event15"/>
+        <COMAIN:ActualCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">645</COMAIN:ActualCost>
+        <COMAIN:CumulativeUtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14788</COMAIN:CumulativeUtilizedHours>
+        <COMAIN:PlannedCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4629</COMAIN:PlannedCost>
+        <COMAIN:UtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</COMAIN:UtilizedHours>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO16">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Work_order"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event16"/>
+        <COMAIN:CumulativeUtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15155</COMAIN:CumulativeUtilizedHours>
+        <COMAIN:PlannedCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53618</COMAIN:PlannedCost>
+        <COMAIN:UtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">368</COMAIN:UtilizedHours>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Work_order"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event17"/>
+        <COMAIN:ActualCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6547</COMAIN:ActualCost>
+        <COMAIN:CumulativeUtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15155</COMAIN:CumulativeUtilizedHours>
+        <COMAIN:PlannedCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5972</COMAIN:PlannedCost>
+        <COMAIN:UtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</COMAIN:UtilizedHours>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO18 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO18">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Work_order"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event18"/>
+        <COMAIN:ActualCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6426</COMAIN:ActualCost>
+        <COMAIN:CumulativeUtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17780</COMAIN:CumulativeUtilizedHours>
+        <COMAIN:PlannedCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3729</COMAIN:PlannedCost>
+        <COMAIN:UtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2625</COMAIN:UtilizedHours>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO19">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Work_order"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event19"/>
+        <COMAIN:ActualCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">312</COMAIN:ActualCost>
+        <COMAIN:CumulativeUtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19075</COMAIN:CumulativeUtilizedHours>
+        <COMAIN:PlannedCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">137</COMAIN:PlannedCost>
+        <COMAIN:UtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1295</COMAIN:UtilizedHours>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Work_order"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event2"/>
+        <COMAIN:CumulativeUtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1295</COMAIN:CumulativeUtilizedHours>
+        <COMAIN:PlannedCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">507</COMAIN:PlannedCost>
+        <COMAIN:UtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1085</COMAIN:UtilizedHours>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Work_order"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event20"/>
+        <COMAIN:ActualCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1134</COMAIN:ActualCost>
+        <COMAIN:CumulativeUtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21158</COMAIN:CumulativeUtilizedHours>
+        <COMAIN:PlannedCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1134</COMAIN:PlannedCost>
+        <COMAIN:UtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2083</COMAIN:UtilizedHours>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Work_order"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event3"/>
+        <COMAIN:ActualCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">768</COMAIN:ActualCost>
+        <COMAIN:CumulativeUtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4375</COMAIN:CumulativeUtilizedHours>
+        <COMAIN:PlannedCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">605</COMAIN:PlannedCost>
+        <COMAIN:UtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3080</COMAIN:UtilizedHours>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Work_order"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event4"/>
+        <COMAIN:ActualCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">357</COMAIN:ActualCost>
+        <COMAIN:CumulativeUtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5915</COMAIN:CumulativeUtilizedHours>
+        <COMAIN:PlannedCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">357</COMAIN:PlannedCost>
+        <COMAIN:UtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1540</COMAIN:UtilizedHours>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Work_order"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event5"/>
+        <COMAIN:ActualCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44235</COMAIN:ActualCost>
+        <COMAIN:CumulativeUtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7683</COMAIN:CumulativeUtilizedHours>
+        <COMAIN:PlannedCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49184</COMAIN:PlannedCost>
+        <COMAIN:UtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1768</COMAIN:UtilizedHours>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Work_order"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event6"/>
+        <COMAIN:ActualCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">159</COMAIN:ActualCost>
+        <COMAIN:CumulativeUtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7683</COMAIN:CumulativeUtilizedHours>
+        <COMAIN:PlannedCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">390</COMAIN:PlannedCost>
+        <COMAIN:UtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</COMAIN:UtilizedHours>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Work_order"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event7"/>
+        <COMAIN:ActualCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">312</COMAIN:ActualCost>
+        <COMAIN:CumulativeUtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8260</COMAIN:CumulativeUtilizedHours>
+        <COMAIN:UtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">578</COMAIN:UtilizedHours>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Work_order"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event8"/>
+        <COMAIN:ActualCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">795</COMAIN:ActualCost>
+        <COMAIN:CumulativeUtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12110</COMAIN:CumulativeUtilizedHours>
+        <COMAIN:PlannedCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1102</COMAIN:PlannedCost>
+        <COMAIN:UtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3850</COMAIN:UtilizedHours>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#WO9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Work_order"/>
+        <COMAIN:isAbout rdf:resource="http://www.semanticweb.org/tlouge/ontologies/2018/2/COMAIN#Event9"/>
+        <COMAIN:ActualCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">323</COMAIN:ActualCost>
+        <COMAIN:CumulativeUtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12618</COMAIN:CumulativeUtilizedHours>
+        <COMAIN:PlannedCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">323</COMAIN:PlannedCost>
+        <COMAIN:UtilizedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">508</COMAIN:UtilizedHours>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
